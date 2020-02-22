@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="form.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="container2">
+            <table cellpadding="4">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><label for="Login"><b>Login </b></label></td>
+                    <td><input type="text" name="LoginUser" id="LoginUserName" required> </td>
+                     
+                </tr>
+                <tr>
+                  <td><label for="Password"><b>Password </b></label></td>  
+                  <td><input type="password" name="pass" id="Pword" oninput="checkpass()" required> </td>
+                  <td><label id="LengthChecker"></p></td>
+                </tr>
+                <tr>
+                    <td><label for="Confirm Password"><b>Confirm Password </b></label></td>
+                    <td><input type="password" name="Cpass" id="CPword" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Gender"><b>Gender </b></label></td>
+                    <td><select id="Gender" style="min-width:160px;"="Gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option></td>
+                </tr>
+                <tr>
+                    <td><label for="Email"><b>Email </b></label></td>
+                    <td><input type="text" name="Email" id="Email" required> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Register" onclick="check()"></td>
+                </tr>
+            </table>
+            <div class="container3">
+                <p id="validation"></p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
